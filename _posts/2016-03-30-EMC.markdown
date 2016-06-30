@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Info Session: EMC"
+date:   2016-03-30
+categories: EECS
+author: "Anant Sahai"
+---
+Come join EMC for an info session and do EECS
