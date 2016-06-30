@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Info Session, Pinterest 9/5"
-date:   2016-09-05
+date:   2016-03-29
 categories: ["EECS", "Sahai", "porn"]
 author: "Anant Sahai"
 ---
