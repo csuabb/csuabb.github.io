@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome BBQ 9-10"
-date:   2016-03-30 19:45:31 +0530
-categories: science
+title:  "Welcome BBQ at Woz"
+date:   2016-08-30
+categories: EECS
 author: "Anant Sahai"
 ---
 Loc: Woz Lounge

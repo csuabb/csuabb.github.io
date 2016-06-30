@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Info Session: EMC"
-date:   2016-03-30
+date:   2016-09-15
 categories: EECS
 author: "Anant Sahai"
 ---
