@@ -20,11 +20,11 @@
     Looking for a place to learn more about computer science and meet other students? Come visit us at our office (311 Soda) or use our study lounge (341* Soda).</p>
 
     <div class="csuapics" style="max-width:500px">
-      <img class="mySlides" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic1.jpg" style="width:100%">
-      <img class="mySlides" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic2.jpg" style="width:100%">
-      <img class="mySlides" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic3.jpg" style="width:100%">
-      <img class="mySlides" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic4.jpg" style="width:100%">
-      <img class="mySlides" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic5.jpg" style="width:100%">
+      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic1.jpg" style="width:100%">
+      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic2.jpg" style="width:100%">
+      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic3.jpg" style="width:100%">
+      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic4.jpg" style="width:100%">
+      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic5.jpg" style="width:100%">
     </div>
 
     <script>
@@ -33,7 +33,7 @@
 
   function carousel() {
       var i;
-      var x = document.getElementsByClassName("mySlides");
+      var x = document.getElementsByClassName("pics");
       for (i = 0; i < x.length; i++) {
          x[i].style.display = "none";
       }
@@ -43,6 +43,31 @@
       setTimeout(carousel, 2000); // Change image every 2 seconds
   }
   </script>
+
+  <div class="corpics" style="max-width:500px">
+    <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic1.jpg" style="width:100%">
+    <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic2.jpg" style="width:100%">
+    <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic3.jpg" style="width:100%">
+    <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic4.jpg" style="width:100%">
+    <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic5.jpg" style="width:100%">
+  </div>
+
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("comp");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
   </body>
 
