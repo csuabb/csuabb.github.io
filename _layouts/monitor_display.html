@@ -55,7 +55,7 @@
   </div>
 
   <script>
-var myIndex = 0;
+var ind = 0;
 kcarousel();
 
 function kcarousel() {
@@ -64,9 +64,9 @@ function kcarousel() {
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
+    ind++;
+    if (ind > x.length) {ind = 1}
+    x[ind-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
