@@ -32,10 +32,10 @@
   carousel();
 
   function carousel() {
-      var i;
+      var count;
       var x = document.getElementsByClassName("pics");
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
+      for (count = 0; count < x.length; count++) {
+         x[count].style.display = "none";
       }
       myIndex++;
       if (myIndex > x.length) {myIndex = 1}
