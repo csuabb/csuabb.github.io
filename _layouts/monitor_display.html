@@ -28,18 +28,18 @@
     </div>
 
     <script>
-  var myIndex = 0;
+  var ind = 0;
   carousel();
 
   function carousel() {
       var count;
-      var x = document.getElementsByClassName("pics");
+      var pik = document.getElementsByClassName("pics");
       for (count = 0; count < x.length; count++) {
-         x[count].style.display = "none";
+         pik[count].style.display = "none";
       }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
-      x[myIndex-1].style.display = "block";
+      ind++;
+      if (ind > pik.length) {ind = 1}
+      pik[ind-1].style.display = "block";
       setTimeout(carousel, 2000); // Change image every 2 seconds
   }
   </script>
