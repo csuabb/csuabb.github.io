@@ -30,20 +30,6 @@ $on-laptop:        800px;
 
 
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -248,12 +234,7 @@ pre {
     padding-left: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+
 }
 
 
@@ -429,47 +410,7 @@ pre {
       margin-right: 20px;
     }
   }
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-      > svg {
-        width: 18px;
-        height: 15px;
-        path {
-          fill: $grey-color-dark;
-        }
-      }
-    }
-    .trigger {
-      clear: both;
-      display: none;
-    }
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
+
 }
 /**
  * Site footer
@@ -518,24 +459,8 @@ pre {
   width: -webkit-calc(45% - (#{$spacing-unit} / 2));
   width: calc(45% - (#{$spacing-unit} / 2));
 }
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width: calc(50% - (#{$spacing-unit} / 2));
-  }
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width: calc(100% - (#{$spacing-unit} / 2));
-  }
-}
-@include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width: calc(100% - (#{$spacing-unit} / 2));
-  }
-}
+
+
 /**
  * Page content
  */
@@ -574,9 +499,7 @@ pre {
   text-align: center;
   font-family: "PT Sans";
   font-weight: 900;
-  @include media-query($on-laptop) {
-    font-size: 36px;
-  }
+
 }
 .post-content {
   margin-bottom: $spacing-unit;
@@ -586,21 +509,15 @@ pre {
   }
   h2 {
     font-size: 32px;
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
+
   }
   h3 {
     font-size: 26px;
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
+
   }
   h4 {
     font-size: 20px;
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
+
   }
 }
 
