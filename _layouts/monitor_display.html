@@ -5,11 +5,11 @@
 .pics {display:none;}
 .comp {display:none;}
 </style>
-
+{% include head.html %}
 
   <body>
 
-
+{% include header.html %}
 
     <div class="page-content">
       <div class="wrapper">
@@ -55,7 +55,7 @@
   kcarousel();
 
   function kcarousel() {
-    
+
       var i;
       var x = document.getElementsByClassName("comp");
       for (i = 0; i < x.length; i++) {
@@ -68,7 +68,7 @@
   }
   </script>
 
-
+  {% include footer.html %}
 
   </body>
 
