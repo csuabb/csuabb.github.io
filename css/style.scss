@@ -449,7 +449,9 @@ pre {
   width: calc(45% - (#{$spacing-unit} / 2));
 }
 
-
+.csua-logo{
+  content:url(https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/3-2.png);
+}
 /**
  * Page content
  */
