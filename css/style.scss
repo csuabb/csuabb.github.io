@@ -310,7 +310,16 @@ pre {
   padding-top: 3.5em;
   text-align: left;
 }
-
+.postDate {
+  float: left;
+  text-transform: uppercase;
+  font-family: "Oxygen";
+  font-size: 1px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  color: white;
+}
 .postTag {
   float: right;
 }
