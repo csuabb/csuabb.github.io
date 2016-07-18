@@ -318,23 +318,25 @@ pre {
 }
 .postContent {
   padding-top: 3.5em;
-  text-align: center;
+  text-align: left;
 }
 .postDate {
   float: left;
   text-transform: uppercase;
-  font-family: "Source Sans Pro";
+  font-family: "Oxygen";
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 2px;
   text-indent: 2px;
+  color: white;
 }
 .postTag {
   float: right;
 }
 .postTitle {
   font-weight: 400;
-  text-align: center;
+  color: white;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-indent: 3px;
