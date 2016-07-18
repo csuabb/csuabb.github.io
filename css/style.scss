@@ -226,7 +226,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  
+
     @extend %clearfix;
     background-color: lightblue;
 
@@ -461,6 +461,8 @@ pre {
  * Page content
  */
 .page-content {
+  position: static;
+  border: 3px solid #73AD21;
   padding: 0;
 }
 .page-heading {
