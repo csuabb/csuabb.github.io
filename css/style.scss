@@ -453,6 +453,12 @@ pre {
 /**
  * Page content
  */
+ .page-mainheadder {
+   position: static;
+   background-color: #2c5888;
+   padding: 0;
+   font-size: 200%;
+ }
 .page-content {
   position: static;
   background-color: #2c5888;
@@ -506,11 +512,11 @@ pre {
 
   }
   h3 {
-    font-size: 26px;
+    font-size: 32px;
 
   }
   h4 {
-    font-size: 20px;
+    font-size: 32px;
 
   }
 }
