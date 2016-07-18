@@ -132,38 +132,35 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: #aaa !important;
+    color: white !important;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: white
     }
 
     &:hover {
-        color: black !important;
-        border-bottom: 1px dotted black ;
+        color: white !important;
+
     }
 
     &.page-link{
       &:hover {
-          color: $text-color;
-          border-bottom: 1px dotted black ;
+          color: white;
+
       }
     }
     &.postLink{
-      color: black !important;
-      &:hover {
+      color: white !important;
 
-          border-bottom: 1px dotted black ;
-      }
 
       &:visited {
-          color: "crimson" !important;
+          color: white !important;
       }
     }
     &.post-title-link{
       color: white !important;
-      
+
     }
 }
 
