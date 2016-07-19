@@ -176,7 +176,7 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: -1px;
     font-style: italic;
 
@@ -258,7 +258,7 @@ pre {
 
 .post {
   font-family: "Source Sans Pro";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   padding-top: 0;
 }
@@ -313,7 +313,7 @@ pre {
 .postDate {
   float: left;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 2px;
   text-indent: 2px;
@@ -329,6 +329,7 @@ pre {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-indent: 3px;
+  font-size: 22px;
 }
 /**
  * Site header
@@ -482,6 +483,7 @@ pre {
 .rightside {
   margin-left: 600px;
   margin-right: 1em;
+  font-size: 20px;
 }
 #owl .item img{
   display: block;
@@ -497,12 +499,15 @@ pre {
   height: auto;
 }
 .carousel {
-  width: 700px;
+  width: 900px;
   margin-left: 600px;
 }
 #logo {
-  width: 400px;
-  height: auto;
+width: 500px;
+height: auto;
+bottom: 10px;
+left: 10px;
+position: absolute;
 }
 .post-list {
   margin-left: 0;
