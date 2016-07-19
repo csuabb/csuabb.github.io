@@ -64,6 +64,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    height: 100%;
 }
 
 
@@ -78,7 +79,9 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
+h3 {
+  padding-top: 1em;
+}
 
 /**
  * Images
@@ -216,11 +219,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-
     @extend %clearfix;
     color: white;
-
-
 }
 
 
@@ -306,7 +306,8 @@ pre {
   text-indent: 2px;
 }
 .postContent {
-  padding-top: 3.5em;
+  padding-bottom: 2.0em;
+  padding-left: 1.0em;
   text-align: left;
 }
 .postDate {
@@ -463,10 +464,26 @@ pre {
 .page-content {
   position: static;
   background-color: #2c5888;
-  padding: 0;
+  padding: 1em;
+  width: 550px;
+  height: 100vh;
+  float: left;
 }
 .page-heading {
   font-size: 20px;
+}
+.rightside {
+  margin-left: 600px;
+  margin-right: 1em;
+}
+#owl .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.carousel {
+  width: 700px;
+  margin-left: 600px;
 }
 .post-list {
   margin-left: 0;
@@ -509,17 +526,24 @@ pre {
     font-size: 1.5rem;
   }
   h2 {
-    font-size: 32px;
-
+    font-size: 48px;
   }
   h3 {
-    font-size: 32px;
-
+    font-size: 36px;
   }
   h4 {
-    font-size: 32px;
-
+    font-size: 24px;
   }
+}
+
+#eventshead {
+  color: #eee;
+  text-transform: uppercase;
+}
+#abouthead {
+  color: #222;
+  text-transform: uppercase;
+  padding-top: 10px;
 }
 
 /**

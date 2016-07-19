@@ -12,64 +12,49 @@
 {% include header.html %}
 
     <div class="page-content">
-      <h1>Upcomming Events</h1>
+      <h2 id="eventshead">Upcoming Events</h2>
       <div class="wrapper">
         {{ content }}
       </div>
+      <img src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic1.jpg"/>
     </div>
-    <div><h>About Us</h>The Computer Science Undergraduate Association supports the undergraduate computer science student body at UC Berkeley and acts as an entry point to industry.
-    The CSUA hosts tech talks, hackathons, info sessions, CS workshops, LAN parties, and the biannual Startup Fair.
-    Looking for a place to learn more about computer science and meet other students? Come visit us at our office (311 Soda) or use our study lounge (341* Soda).</div>
 
-    <div class="xx" style="max-width:500px">
-      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic1.jpg" style="width:100%">
-      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic2.jpg" style="width:100%">
-      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic3.jpg" style="width:100%">
-      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic4.jpg" style="width:100%">
-      <img class="pics" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic5.jpg" style="width:100%">
+    <div class="rightside">
+
+      <h2 id="abouthead">About Us</h2>
+
+      <p>
+      The Computer Science Undergraduate Association supports the undergraduate computer science student body at UC Berkeley and acts as an entry point to industry.
+      The CSUA hosts tech talks, hackathons, info sessions, CS workshops, LAN parties, and the biannual Startup Fair.
+      Looking for a place to learn more about computer science and meet other students? Come visit us at our office (311 Soda) or use our study lounge (341* Soda).</div>
+      </p>
+
+      <div class="carousel">
+        <div id="owl" class="owl-carousel owl-theme">
+
+          <div class="item"><img src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic1.jpg"></div>
+          <div class="item"><img src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic2.jpg"></div>
+          <div class="item"><img src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic3.jpg"></div>
+          <div class="item"><img src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic4.jpg"></div>
+          <div class="item"><img src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic5.jpg"></div>
+
+        </div>
+      </div>
+
     </div>
-    <div class="x" style="max-width:500px">
-      <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic1.jpg" style="width:100%">
-      <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic2.jpg" style="width:100%">
-      <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic3.jpg" style="width:100%">
-      <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic4.jpg" style="width:100%">
-      <img class="comp" src="https://raw.githubusercontent.com/csuabb/csuabb.github.io/master/csuapics/pic5.jpg" style="width:100%">
-    </div>
-    <script>
-  var myIndex = 0;
-  carousel();
+  <script>
+  $(document).ready(function() {
+    $("#owl").owlCarousel({
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem : true,
+        autoPlay : 6000,
+        pagination : false
+    });
 
-  function carousel() {
-      var i;
-      var x = document.getElementsByClassName("pics");
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
-      x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-  }
+  });
 
-  var ind = 0;
-  kcarousel();
-
-  function kcarousel() {
-
-      var i;
-      var x = document.getElementsByClassName("comp");
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-      }
-      ind++;
-      if (ind > x.length) {ind = 1}
-      x[ind-1].style.display = "block";
-      setTimeout(kcarousel, 2000); // Change image every 2 seconds
-  }
   </script>
-<div>Computer Science Undergraduate Association</div>
-<div class="csua-logo"></div>​
-
   </body>
 
 </html>
