@@ -463,7 +463,14 @@ pre {
  }
 .page-content {
   position: static;
-  background-color: #2c5888;
+  background: rgba(45,73,102,1);
+  background: -moz-linear-gradient(45deg, rgba(45,73,102,1) 0%, rgba(57,119,191,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(45,73,102,1)), color-stop(100%, rgba(57,119,191,1)));
+  background: -webkit-linear-gradient(45deg, rgba(45,73,102,1) 0%, rgba(57,119,191,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(45,73,102,1) 0%, rgba(57,119,191,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(45,73,102,1) 0%, rgba(57,119,191,1) 100%);
+  background: linear-gradient(45deg, rgba(45,73,102,1) 0%, rgba(57,119,191,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d4966', endColorstr='#3977bf', GradientType=1 );
   padding: 1em;
   width: 550px;
   height: 100vh;
@@ -481,9 +488,21 @@ pre {
   width: 100%;
   height: auto;
 }
+#industry .item{
+  margin: 3px;
+}
+#industry .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .carousel {
   width: 700px;
   margin-left: 600px;
+}
+#logo {
+  width: 400px;
+  height: auto;
 }
 .post-list {
   margin-left: 0;
