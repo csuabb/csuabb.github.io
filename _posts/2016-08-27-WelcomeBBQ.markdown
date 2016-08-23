@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome BBQ at Woz (8-27)"
+title:  "Welcome BBQ at Woz (8/27)"
 categories: CSUA
 author: "Sid Masih"
 ---

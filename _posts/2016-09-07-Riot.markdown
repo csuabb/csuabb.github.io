@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Info Session, Dropbox (9/9)"
+title:  "Info Session, Riot (9/7)"
 categories: ["EECS", "Sahai", "porn"]
 author: "Anant Sahai"
 ---
