@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Info Session: EMC (9-6)"
+categories: EECS
+author: "Anant Sahai"
+---
+5:30 pm, Sibley Auditorium  

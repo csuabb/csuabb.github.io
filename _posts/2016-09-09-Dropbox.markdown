@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Info Session, Pinterest 9/5"
+title:  "Info Session, Dropbox 9/9"
 categories: ["EECS", "Sahai", "porn"]
 author: "Anant Sahai"
 ---
-5pm Sibley Auditorium
+5pm, Sibley Auditorium 
