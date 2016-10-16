@@ -1,4 +1,3 @@
-# EECS 4 LYFE YO, EECS Master race for trump master race
-
-EECS > (your major)
-# csuabb.github.io
+# CSUA Display Board
+This is the code used to push events to the CSUA monitor which displays info to people who walk into our office about us :) 
+CSUA 4 lyfe yo! 
